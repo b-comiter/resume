@@ -1,0 +1,311 @@
+%-------------------------
+% Resume in Latex
+% Author : Vaishanth
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}%\setmainfont{Times New Roman}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{catalinablue}{HTML}{063970}
+
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% \usepackage[T1]{fontenc}
+% \usepackage[T1]{fontenc}
+% \usepackage{cochineal}
+% \usepackage{fourier}
+
+% \usepackage{fontspec}
+% \usepackage{polyglossia}
+% \setmainlanguage{german}
+% \setmainfont{Times New Roman}
+
+% serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSingleSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.1in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------\usepackage{fontspec}
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING----------
+
+
+\begin{center}
+
+    {\huge Brandon Comiter} \\ \vspace{2pt} 
+    {+1 (407) 690 9564} ~ 
+    \small{-}
+    % \href{[url to portfolio]}{\color{blue}{Portfolio}} ~ 
+    % \small{-}
+    \href{mailto:bcomiter@gmail.com}{\color{blue}{ bcomiter@gmail.com}} ~ 
+    \small{-}
+    \href{www.linkedin.com/in/brandon-comiter/}{\color{blue}{ linkedin.com/in/brandon-comiter}}  ~
+    \small{-}
+    \href{https://github.com/b-comiter}{\color{blue}{ github.com/b-comiter}} ~
+    \vspace{-7pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{\color{catalinablue}EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA, USA}
+      {Master of Science in Computer Science; Cumulative GPA: \textbf{3.8}}{Aug 2021 - Aug 2023}
+    \vspace{0pt}
+    
+    \resumeSubheading
+      {University of Central Florida}{Orlando, FL, USA}
+      {Bachelors of Science in Biomedical Science; Cumulative GPA: \textbf{3.9}}{August 2016 - May 2020}
+      
+  \resumeSubHeadingListEnd
+  \vspace{-20pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\color{catalinablue}TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Programming Languages:}}{ \normalsize{C/C++, C\#, R, Java, JavaScript, TypeScript, Python}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Libraries and Tools:}}{ \normalsize{Android Studio, AWS, cURL, Cypress, GraphQL, gRPC, GCP, OpenCV, Pandas, PySpark, Postman, React, Redux, Scala, Scikit-learn, Spring, Tesseract, Flask, NextJS, Node.js, Linux}} \\
+      \vspace{1.2pt}
+      
+     % copy and paste above textbf block to add more 
+     }}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+ %-----------EXPERIENCE-----------
+\section{\color{catalinablue}WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer II}{} 
+      {Principal Financial Group, NC, USA}{May 2023 - Present}
+      \resumeItemListStart
+            \resumeItem{\normalsize{Transformed relational database into a non-relational model, optimizing scalability and performance, using AWS DynamoDB}}
+            \resumeItem{\normalsize{Developed internal automation and full stack application (React, Spring Boot)}}  
+            \resumeItem{\normalsize{Created microservices for internal tools utilizing AWS and AzureAD}}
+            \resumeItem{\normalsize{Facilitated seamless communication between client and server with DynamoDB NoSQL database by
+implementing robust REST-based API and leveraging Spring Boot framework}}
+            \resumeItem{\normalsize{Designed and implemented GraphQL solution for modernization of legacy REST APIs to query from SQL databases}}  
+      \resumeItemListEnd  
+      \vspace{-12pt}
+
+    \resumeSubheading
+      {Software Engineer Intern }{} 
+      {Slalom, GA, USA}{Sept 2022 - May 2023}
+      \resumeItemListStart
+            \resumeItem{\normalsize{Developed self-returns prototype comprised of full stack application (React/Redux, flask, PostgreSQL) and embedded system for a Fortune 20 retail company}}
+            \resumeItem{\normalsize{Outcome was 33\% reduction in time to return, with 97\% customer satisfaction}}  
+            \resumeItem{\normalsize{Applied Google Cloud Vision API, yolo-V7, and DeepSort to quantify customer behavior and detect theft from existing CCTV infrastructure}}
+            \resumeItem{\normalsize{Architected, developed and deployed a full stack brainstorming tool web application (React/Redux, Node, AWS DynamoDB) and AWS hosting}}  
+            \resumeItem{\normalsize{Developed full stack web application (React, flask, AWS amplify) to showcase IoT padlock capabilities for Fortune 20 CXO}}  
+      \resumeItemListEnd  
+
+    \resumeSubheading
+      {Engineer}{} 
+      {Hesperos Inc., FL, USA}{May 2020 - Aug 2022}
+      \resumeItemListStart
+
+            \resumeItem{\normalsize{Led development of real-time monitoring for system-critical infrastructure using embedded hardware}}  
+            \resumeItem{\normalsize{Responsible for maintaining cellular cultures for million-dollar projects with the Bill \& Melinda Gates Foundation}}
+            \resumeItem{\normalsize{Created applied bioinformatic models in R to quantify the PKPD effects found within Human-on-a-Chip systems}}
+            \resumeItem{\normalsize{Developed self-returns prototype comprised of full stack application (React/Redux, flask, PostgreSQL) and embedded system for a Fortune 20 retail company}}
+            \resumeItem{\normalsize{Continued development on a large C++ code-base for in-house electro-physiological monitoring software used to capture up to 25 kilo-hertz electrical potential changes in living cells, critical to core business functionality}}  
+      \resumeItemListEnd  
+
+    % copy and paste above resumeSubheading block to add more 
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+ %-----------PROJECTS-----------
+\section{\color{catalinablue}PROJECTS}
+
+    \resumeItemListStart
+        \vspace{0.5pt}
+        \resumeItem{
+            \normalsize{\textbf{DISTRIBUTED FILE SYSTEM}, Designed and implemented a distributed file system utilizing multi-threading and concurrency checking to ensure consistency between a central server and a scalable number of local machines. Allowed for seamless addition, Removal, and listing of all files on the server; resulting in a significant improvement in data access speed.} 
+        }
+        
+        \vspace{-5pt}
+        \resumeItem{
+            \normalsize{\textbf{ROBOT NAVIGATION IN VIRTUAL SPACE}, Implemented simultaneous localization and mapping (SLAM) algorithm to navigate a robot through virtual space while avoiding simulated obstacles}
+        }
+        
+        \vspace{-5pt}
+        \resumeItem{
+            \normalsize{\textbf{MACHINE LEARNING TRADING STRATEGY}, Implemented a supervised machine learning classification algorithm in Python to create an automated trading strategy for buying and selling financial equities} 
+        }
+        \vspace{-5pt}
+
+        % copy and paste above resumeItem block to add more 
+        
+    \resumeItemListEnd  
+   
+ \vspace{-12pt}
+%
+
+% %-----------Publications---------------
+% \section{\color{catalinablue}PUBLICATIONS}
+    
+%   \resumeItemListStart
+%     \resumeItem{\normalsize{\textbf{Development of a human malaria-on-a-chip disease model for drug efficacy and off-target toxicity evaluation:}\\ 
+%     Rupar, Michael J., Trevor Sasserath, Ethan Smith, Brandon Comiter, Narasimhan Sriram, Christopher J. Long, Christopher
+% W. McAleer, and James J. Hickman. "Development of a human malaria-on-a-chip disease model for drug efficacy and off-
+% target toxicity evaluation." Scientific Reports 13, no. 1 (2023): 10509.} }
+%         \vspace{-0pt}
+
+%     Contributed to the engineering of a cutting-edge human malaria-on-a-chip disease model. Utilized micro-
+% controllers, solenoids, and O2/CO2 concentration sensors to ensure optimal gas concentration and advance drug
+% efficacy and off-target toxicity evaluation.
+
+%   \resumeItemListEnd 
+      
+% \vspace{-8pt}
+
+%-----------Leadership---------------
+% \section{\color{airforceblue}EXTRACURRICULAR ACTIVITIES}
+    
+%       \resumeItemListStart
+%         \resumeItem{\normalsize{\textbf{Event Coordinator} in univesrity Club - {Month Year - Month Year} }} 
+%         \vspace{-5pt}
+        
+%         \resumeItem{\normalsize{\textbf{Executive member} in Robotics Club - } {Month Year - Month Year}}    
+%         \vspace{-5pt}
+
+%         % copy and paste above resumeItem block to add more 
+%       \resumeItemListEnd 
+      
+% \vspace{-12pt}
+
+\end{document}
